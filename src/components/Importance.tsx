@@ -4,6 +4,7 @@ import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import { importancePoints } from "@/lib/content";
+import { images } from "@/lib/images";
 
 export default function Importance() {
   return (
@@ -13,7 +14,7 @@ export default function Importance() {
           <AnimatedSection>
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80"
+                src={images.importance}
                 alt="أهمية غسيل السيارات"
                 fill
                 className="object-cover"

@@ -1,3 +1,5 @@
+import { images } from "./images";
+
 export const siteConfig = {
   name: "شفرة اتقان",
   tagline: "شركة غسيل وتلميع سيارات بالرياض",
@@ -69,42 +71,42 @@ export const services = [
   {
     title: "الغسيل الخارجي",
     description: "تنظيف السيارة من الخارج بأفضل مواد الغسيل المستوردة وأقوى أجهزة رش المياه.",
-    image: "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=800&q=80",
+    image: images.services.exterior,
   },
   {
     title: "تلميع المصابيح والمرايا",
     description: "تنظيف وتلميع المصابيح الداخلية والخلفية والأمامية والمرايا والشبك الأمامي.",
-    image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&q=80",
+    image: images.services.polish,
   },
   {
     title: "غسل المحرك",
     description: "إزالة الشحوم والأتربة المتراكمة على المحرك لتحسين أدائه.",
-    image: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80",
+    image: images.services.engine,
   },
   {
     title: "تلميع الجنوط",
     description: "تنظيف وتلميع الجنوط من أي شوائب ملتصقة بها.",
-    image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80",
+    image: images.services.wheels,
   },
   {
     title: "التنظيف العميق الداخلي",
     description: "غسيل الأرضية وكافة الأسطح والمقاعد بسائل تنظيف آمن ومخصص لنوعية الأقمشة.",
-    image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80",
+    image: images.services.interior,
   },
   {
     title: "تلميع الطلاء",
     description: "إزالة الخدوش السطحية باحترافية وإضافة طبقة حماية مضادة للخدوش.",
-    image: "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&q=80",
+    image: images.services.paint,
   },
   {
     title: "تنظيف وتلميع الزجاج",
     description: "تنظيف الزجاج وإضافة طبقة تصفيح للحفاظ عليه وتوضيح الرؤية.",
-    image: "https://images.unsplash.com/photo-1549399542-11e5973091e0?w=800&q=80",
+    image: images.services.glass,
   },
   {
     title: "فحص الإطارات",
     description: "فحص الإطارات وموازنتها وتعبئتها بالهواء إذا لزم الأمر.",
-    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80",
+    image: images.services.tires,
   },
 ];
 
@@ -119,7 +121,7 @@ export const steamWashContent = {
     { title: "إزالة الروائح", text: "يعمل البخار على التخلص من الروائح الكريهة دون مواد كيميائية." },
     { title: "حماية أطول", text: "يقلل من تلطيخ السيارة ويحافظ على نظافتها ومظهرها اللامع لفترات أطول." },
   ],
-  image: "https://images.unsplash.com/photo-1520340356584-1a4246c4fd8a?w=1200&q=80",
+  image: images.steamWash,
 };
 
 export const mobileServiceContent = {
@@ -133,7 +135,7 @@ export const mobileServiceContent = {
     "التخلص من الاتساخات والبقع والروائح غير المرغوب بها",
     "خدمة متاحة 24 ساعة في كافة أرجاء الرياض وضواحيها",
   ],
-  image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+  image: images.mobileService,
 };
 
 export const packages = {

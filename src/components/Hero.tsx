@@ -4,13 +4,14 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Phone, MessageCircle, Sparkles } from "lucide-react";
 import { heroContent, siteConfig, stats } from "@/lib/content";
+import { images } from "@/lib/images";
 
 export default function Hero() {
   return (
     <section className="hero-gradient relative min-h-screen overflow-hidden pt-24">
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=1920&q=80"
+          src={images.heroBg}
           alt="غسيل سيارات بالرياض"
           fill
           className="object-cover opacity-20"
@@ -72,7 +73,7 @@ export default function Hero() {
         >
           <div className="relative mx-auto aspect-[4/3] max-w-lg overflow-hidden rounded-3xl shadow-2xl ring-4 ring-white/20">
             <Image
-              src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&q=80"
+              src={images.heroCar}
               alt="تلميع سيارات بالرياض"
               fill
               className="object-cover"
