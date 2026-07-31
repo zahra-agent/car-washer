@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import CompareSlider from "./CompareSlider";
 import AnimatedSection from "./AnimatedSection";
+import CustomerReviews from "./CustomerReviews";
 import CTABanner from "./CTABanner";
 import { beforeAfterSlides } from "@/lib/content";
 
@@ -98,6 +99,8 @@ export default function BeforeAfterGallery() {
             ))}
           </div>
         </AnimatedSection>
+
+        <CustomerReviews />
 
         <div className="mt-12">
           <CTABanner compact />

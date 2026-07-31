@@ -1,7 +1,7 @@
 import { images } from "./images";
 
 export const siteConfig = {
-  name: "شفرة اتقان",
+  name: "شفرة الاتقان",
   tagline: "شركة غسيل وتلميع سيارات بالرياض",
   phone: "0557761886",
   phoneDisplay: "0557761886",
@@ -199,23 +199,32 @@ export const neighborhoods = ["العقيق", "الصحافة", "النخيل", 
 
 export const beforeAfterSlides = [
   {
-    title: "الخارج",
-    description: "سيارة مغبرة من بره — بعد الغسيل والتلميع بقت تبرق",
-    before: "/images/before-after/exterior-before.jpg",
-    after: "/images/before-after/exterior-after.jpg",
+    title: "١",
+    description: "نتيجة حقيقية من أعمالنا — اسحب للمقارنة",
+    before: "/images/before-after/1-before.jpeg",
+    after: "/images/before-after/1-after.jpeg",
   },
   {
-    title: "الكرسي الأمامي",
-    description: "مقعد متوسخ ومبقع — بعد التنظيف العميق بالبخار بقى نظيف",
-    before: "/images/before-after/seat-before.jpg",
-    after: "/images/before-after/seat-after.jpg",
+    title: "٢",
+    description: "نتيجة حقيقية من أعمالنا — اسحب للمقارنة",
+    before: "/images/before-after/2-before.jpeg",
+    after: "/images/before-after/2-after.jpeg",
   },
   {
-    title: "الكنبة الخلفية",
-    description: "المقاعد الخلفية قبل وبعد التنظيف الشامل والتعقيم",
-    before: "/images/before-after/backseat-before.jpg",
-    after: "/images/before-after/backseat-after.jpg",
+    title: "٣",
+    description: "نتيجة حقيقية من أعمالنا — اسحب للمقارنة",
+    before: "/images/before-after/3-before.jpeg",
+    after: "/images/before-after/3-after.jpeg",
   },
+];
+
+export const customerVideos = [
+  { src: "/videos/customers/1.mp4" },
+  { src: "/videos/customers/2.mp4" },
+  { src: "/videos/customers/3.mp4" },
+  { src: "/videos/customers/4.mp4" },
+  { src: "/videos/customers/5.mp4" },
+  { src: "/videos/customers/6.mp4" },
 ];
 
 export const stats = [

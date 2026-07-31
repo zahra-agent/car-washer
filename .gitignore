@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# large source assets (copies live in public/)
+/صور-قبل-بعد/
+/فيديوهات-العملاء/
+/صور/
+logo.png
+brand-name.png

@@ -5,12 +5,12 @@ export const images = {
   steamWash: "/images/steam-wash.jpg",
   mobileService: "/images/mobile-service.jpg",
   beforeAfter: {
-    exteriorBefore: "/images/before-after/exterior-before.jpg",
-    exteriorAfter: "/images/before-after/exterior-after.jpg",
-    seatBefore: "/images/before-after/seat-before.jpg",
-    seatAfter: "/images/before-after/seat-after.jpg",
-    backseatBefore: "/images/before-after/backseat-before.jpg",
-    backseatAfter: "/images/before-after/backseat-after.jpg",
+    slide1Before: "/images/before-after/1-before.jpeg",
+    slide1After: "/images/before-after/1-after.jpeg",
+    slide2Before: "/images/before-after/2-before.jpeg",
+    slide2After: "/images/before-after/2-after.jpeg",
+    slide3Before: "/images/before-after/3-before.jpeg",
+    slide3After: "/images/before-after/3-after.jpeg",
   },
   services: {
     exterior: "/images/service-exterior.jpg",

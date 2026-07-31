@@ -3,11 +3,13 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
+import BrandLogo from "./BrandLogo";
 import { siteConfig } from "@/lib/content";
 
 const navLinks = [
   { href: "#features", label: "مميزاتنا" },
   { href: "#results", label: "قبل وبعد" },
+  { href: "#reviews", label: "آراء العملاء" },
   { href: "#services", label: "خدماتنا" },
   { href: "#steam", label: "غسيل البخار" },
   { href: "#packages", label: "الباقات" },
@@ -32,19 +34,9 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#" className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-primary-light to-accent text-lg font-bold text-white shadow-lg">
-            ش
-          </div>
-          <div className="hidden sm:block">
-            <p className={`text-lg font-bold ${scrolled ? "text-primary" : "text-white"}`}>
-              {siteConfig.name}
-            </p>
-            <p className={`text-xs ${scrolled ? "text-muted" : "text-white/70"}`}>
-              {siteConfig.tagline}
-            </p>
-          </div>
-        </a>
+        <div className={scrolled ? "" : ""}>
+          <BrandLogo variant={scrolled ? "dark" : "light"} />
+        </div>
 
         <nav className="hidden items-center gap-1 lg:flex">
           {navLinks.map((link) => (
