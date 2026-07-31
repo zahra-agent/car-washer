@@ -3,9 +3,12 @@ import { images } from "./images";
 export const siteConfig = {
   name: "شفرة اتقان",
   tagline: "شركة غسيل وتلميع سيارات بالرياض",
-  phone: "0500953665",
-  phoneDisplay: "0500953665",
-  whatsapp: "966500953665",
+  phone: "0557761886",
+  phoneDisplay: "0557761886",
+  whatsapp: "966557761886",
+  whatsappLink:
+    "https://wa.me/966557761886?text=" +
+    encodeURIComponent("مرحباً، أريد الاستفسار عن خدمات وأسعار غسيل السيارات"),
   email: "info@shefraalitqan.sa",
   location: "الرياض - المملكة العربية السعودية",
   url: "https://shefraalitqan.sa",
@@ -15,7 +18,8 @@ export const heroContent = {
   title: "شركة غسيل سيارات بالرياض",
   subtitle:
     "تعتبر الحاجة إلى شركة غسيل سيارات بالرياض من أفضل الخيارات التي تتيح لك الحفاظ على نظافة سيارتك حيث تقوم باستخدام أحدث التقنيات المتطورة والمعدات اللازمة لتنظيفها العميق بشكل آمن وفعال.",
-  cta: "احجز خدمتك الآن",
+  cta: "تواصل واتساب لمعرفة الأسعار",
+  ctaCall: "اتصل واستفسر عن خدماتنا",
   discount: "خصم 30% على غسيل البخار",
 };
 
@@ -192,6 +196,27 @@ export const otherServices = [
 ];
 
 export const neighborhoods = ["العقيق", "الصحافة", "النخيل", "الياسمين"];
+
+export const beforeAfterSlides = [
+  {
+    title: "الخارج",
+    description: "سيارة مغبرة من بره — بعد الغسيل والتلميع بقت تبرق",
+    before: "/images/before-after/exterior-before.jpg",
+    after: "/images/before-after/exterior-after.jpg",
+  },
+  {
+    title: "الكرسي الأمامي",
+    description: "مقعد متوسخ ومبقع — بعد التنظيف العميق بالبخار بقى نظيف",
+    before: "/images/before-after/seat-before.jpg",
+    after: "/images/before-after/seat-after.jpg",
+  },
+  {
+    title: "الكنبة الخلفية",
+    description: "المقاعد الخلفية قبل وبعد التنظيف الشامل والتعقيم",
+    before: "/images/before-after/backseat-before.jpg",
+    after: "/images/before-after/backseat-after.jpg",
+  },
+];
 
 export const stats = [
   { value: "5000+", label: "عميل سعيد" },

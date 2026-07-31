@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
+import BeforeAfterGallery from "@/components/BeforeAfterGallery";
 import Importance from "@/components/Importance";
 import Services from "@/components/Services";
 import SteamWash from "@/components/SteamWash";
@@ -8,7 +9,7 @@ import MobileService from "@/components/MobileService";
 import Packages from "@/components/Packages";
 import Tips from "@/components/Tips";
 import FAQ from "@/components/FAQ";
-import Contact from "@/components/Contact";
+import ContactCTA from "@/components/ContactCTA";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <main>
         <Hero />
         <Features />
+        <BeforeAfterGallery />
         <Importance />
         <Services />
         <SteamWash />
@@ -26,7 +28,7 @@ export default function Home() {
         <Packages />
         <Tips />
         <FAQ />
-        <Contact />
+        <ContactCTA />
       </main>
       <Footer />
       <FloatingButtons />

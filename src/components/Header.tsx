@@ -2,16 +2,17 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, MessageCircle } from "lucide-react";
 import { siteConfig } from "@/lib/content";
 
 const navLinks = [
   { href: "#features", label: "مميزاتنا" },
+  { href: "#results", label: "قبل وبعد" },
   { href: "#services", label: "خدماتنا" },
   { href: "#steam", label: "غسيل البخار" },
   { href: "#packages", label: "الباقات" },
   { href: "#faq", label: "أسئلة شائعة" },
-  { href: "#contact", label: "تواصل معنا" },
+  { href: "#contact", label: "تواصل" },
 ];
 
 export default function Header() {
@@ -59,13 +60,22 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
+          <a
+            href={siteConfig.whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden items-center gap-2 rounded-full bg-green-500 px-4 py-2.5 text-sm font-bold text-white shadow-lg transition-transform hover:scale-105 sm:flex"
+          >
+            <MessageCircle className="h-4 w-4" />
+            واتساب
+          </a>
           <a
             href={`tel:${siteConfig.phone}`}
-            className="hidden items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-white shadow-lg transition-transform hover:scale-105 hover:bg-accent-light sm:flex"
+            className="hidden items-center gap-2 rounded-full bg-accent px-4 py-2.5 text-sm font-bold text-white shadow-lg transition-transform hover:scale-105 hover:bg-accent-light sm:flex"
           >
             <Phone className="h-4 w-4" />
-            اتصل الآن
+            {siteConfig.phoneDisplay}
           </a>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -97,8 +107,17 @@ export default function Header() {
                 </a>
               ))}
               <a
+                href={siteConfig.whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 flex items-center justify-center gap-2 rounded-full bg-green-500 px-5 py-3 text-sm font-bold text-white"
+              >
+                <MessageCircle className="h-4 w-4" />
+                واتساب
+              </a>
+              <a
                 href={`tel:${siteConfig.phone}`}
-                className="mt-2 flex items-center justify-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-bold text-white"
+                className="flex items-center justify-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-bold text-white"
               >
                 <Phone className="h-4 w-4" />
                 {siteConfig.phoneDisplay}

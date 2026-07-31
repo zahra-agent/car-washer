@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import AnimatedSection from "./AnimatedSection";
+import CTABanner from "./CTABanner";
 import { services } from "@/lib/content";
 
 export default function Services() {
@@ -43,6 +44,10 @@ export default function Services() {
               </div>
             </AnimatedSection>
           ))}
+        </div>
+
+        <div className="mt-16">
+          <CTABanner compact title="مهتم بأي خدمة؟" subtitle="راسلنا على واتساب أو اتصل — نرد عليك بكل التفاصيل والأسعار" />
         </div>
       </div>
     </section>

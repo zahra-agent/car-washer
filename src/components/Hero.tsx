@@ -47,7 +47,7 @@ export default function Hero() {
 
           <div className="flex flex-col items-center gap-4 sm:flex-row lg:justify-start justify-center">
             <a
-              href={`https://wa.me/${siteConfig.whatsapp}`}
+              href={siteConfig.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-full bg-green-500 px-8 py-4 text-base font-bold text-white shadow-xl transition-all hover:scale-105 hover:bg-green-600 hover:shadow-green-500/30"
@@ -60,7 +60,7 @@ export default function Hero() {
               className="flex items-center gap-2 rounded-full border-2 border-white/30 bg-white/10 px-8 py-4 text-base font-bold text-white backdrop-blur-sm transition-all hover:bg-white/20"
             >
               <Phone className="h-5 w-5" />
-              {siteConfig.phoneDisplay}
+              {heroContent.ctaCall}
             </a>
           </div>
         </motion.div>

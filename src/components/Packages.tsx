@@ -1,6 +1,6 @@
 "use client";
 
-import { Check } from "lucide-react";
+import { Check, Phone, MessageCircle } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import { packages, siteConfig } from "@/lib/content";
 
@@ -16,7 +16,7 @@ export default function Packages() {
             {packages.title}
           </h2>
           <p className="mx-auto max-w-2xl text-white/70">
-            توفر شركة غسيل سيارات بالرياض العديد من الباقات المتنوعة كي تلبي كافة احتياجات عملائها.
+            باقات متنوعة تناسب احتياجك — تواصل معنا على واتساب أو اتصل لمعرفة الأسعار والتفاصيل
           </p>
         </AnimatedSection>
 
@@ -27,14 +27,24 @@ export default function Packages() {
                 <h3 className="text-2xl font-extrabold text-foreground">الباقة الشاملة</h3>
                 <p className="mt-1 text-muted">خدمة كاملة من الداخل والخارج</p>
               </div>
-              <a
-                href={`https://wa.me/${siteConfig.whatsapp}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full bg-accent px-8 py-3 text-sm font-bold text-white shadow-lg transition-transform hover:scale-105"
-              >
-                احجز الباقة الآن
-              </a>
+              <div className="flex flex-col gap-2 sm:flex-row">
+                <a
+                  href={siteConfig.whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 rounded-full bg-green-500 px-6 py-3 text-sm font-bold text-white shadow-lg transition-transform hover:scale-105"
+                >
+                  <MessageCircle className="h-4 w-4" />
+                  اسأل عن الأسعار
+                </a>
+                <a
+                  href={`tel:${siteConfig.phone}`}
+                  className="flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-bold text-white shadow-lg transition-transform hover:scale-105"
+                >
+                  <Phone className="h-4 w-4" />
+                  اتصل الآن
+                </a>
+              </div>
             </div>
 
             <div className="grid gap-3 sm:grid-cols-2">

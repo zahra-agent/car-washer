@@ -4,6 +4,14 @@ export const images = {
   importance: "/images/importance.jpg",
   steamWash: "/images/steam-wash.jpg",
   mobileService: "/images/mobile-service.jpg",
+  beforeAfter: {
+    exteriorBefore: "/images/before-after/exterior-before.jpg",
+    exteriorAfter: "/images/before-after/exterior-after.jpg",
+    seatBefore: "/images/before-after/seat-before.jpg",
+    seatAfter: "/images/before-after/seat-after.jpg",
+    backseatBefore: "/images/before-after/backseat-before.jpg",
+    backseatAfter: "/images/before-after/backseat-after.jpg",
+  },
   services: {
     exterior: "/images/service-exterior.jpg",
     polish: "/images/service-polish.jpg",
