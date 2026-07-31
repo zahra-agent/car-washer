@@ -13,12 +13,12 @@ export default function MobileService() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <AnimatedSection className="order-2 lg:order-1">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-2xl">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-slate-50 shadow-2xl ring-1 ring-slate-100">
               <Image
                 src={mobileServiceContent.image}
                 alt="غسيل سيارات متنقل"
                 fill
-                className="object-cover"
+                className="object-contain p-2"
               />
             </div>
             <div className="mt-6 flex flex-wrap gap-2">

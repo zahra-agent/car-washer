@@ -201,20 +201,20 @@ export const beforeAfterSlides = [
   {
     title: "١",
     description: "نتيجة حقيقية من أعمالنا — اسحب للمقارنة",
-    before: "/images/before-after/1-before.jpeg",
-    after: "/images/before-after/1-after.jpeg",
+    before: "/images/before-after/1-after.jpeg",
+    after: "/images/before-after/1-before.jpeg",
   },
   {
     title: "٢",
     description: "نتيجة حقيقية من أعمالنا — اسحب للمقارنة",
-    before: "/images/before-after/2-before.jpeg",
-    after: "/images/before-after/2-after.jpeg",
+    before: "/images/before-after/2-after.jpeg",
+    after: "/images/before-after/2-before.jpeg",
   },
   {
     title: "٣",
     description: "نتيجة حقيقية من أعمالنا — اسحب للمقارنة",
-    before: "/images/before-after/3-before.jpeg",
-    after: "/images/before-after/3-after.jpeg",
+    before: "/images/before-after/3-after.jpeg",
+    after: "/images/before-after/3-before.jpeg",
   },
 ];
 

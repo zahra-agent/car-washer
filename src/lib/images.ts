@@ -3,7 +3,7 @@ export const images = {
   heroCar: "/images/hero-car.jpg",
   importance: "/images/importance.jpg",
   steamWash: "/images/steam-wash.jpg",
-  mobileService: "/images/mobile-service.jpg",
+  mobileService: "/images/mobile-service.png",
   beforeAfter: {
     slide1Before: "/images/before-after/1-before.jpeg",
     slide1After: "/images/before-after/1-after.jpeg",
