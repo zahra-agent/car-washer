@@ -51,15 +51,15 @@ export default function CompareSlider({
   return (
     <div
       ref={containerRef}
-      className="relative aspect-[16/10] w-full select-none overflow-hidden rounded-2xl bg-slate-100 shadow-xl ring-1 ring-slate-200 touch-none"
+      className="relative aspect-[16/10] w-full select-none overflow-hidden rounded-2xl bg-slate-900 shadow-xl ring-1 ring-slate-200 touch-none"
       onPointerMove={(e) => dragging && updatePosition(e.clientX)}
       onPointerUp={() => setDragging(false)}
     >
-      <Image src={after} alt={`${alt} - ${afterLabel}`} fill className="object-contain p-3 sm:p-4" sizes="(max-width:768px) 100vw, 800px" draggable={false} />
+      <Image src={after} alt={`${alt} - ${afterLabel}`} fill className="object-cover" sizes="(max-width:768px) 100vw, 800px" draggable={false} />
 
       <div className="absolute inset-y-0 left-0 overflow-hidden" style={{ width: `${position}%` }}>
-        <div className="relative h-full bg-slate-100" style={{ width: width || "100%" }}>
-          <Image src={before} alt={`${alt} - ${beforeLabel}`} fill className="object-contain p-3 sm:p-4" sizes="(max-width:768px) 100vw, 800px" draggable={false} />
+        <div className="relative h-full" style={{ width: width || "100%" }}>
+          <Image src={before} alt={`${alt} - ${beforeLabel}`} fill className="object-cover" sizes="(max-width:768px) 100vw, 800px" draggable={false} />
         </div>
       </div>
 
